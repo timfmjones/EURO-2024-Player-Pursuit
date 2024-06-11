@@ -219,6 +219,7 @@ const App = () => {
           onPlayAgain={handlePlayAgain}
           onShare={handleShare}
           player={targetPlayer}
+          guesses={guesses.length}
         />
       )}
       {targetPlayer && (
