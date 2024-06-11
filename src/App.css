@@ -4,7 +4,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
 
 .App {
@@ -12,7 +12,9 @@ body {
   position: relative;
   min-height: 100vh;
   /* padding-bottom: 120px; Ensure space for the bottom border */
-
+  cursor: pointer;
+  /* font-family: 'Arial Black', Arial, sans-serif; */
+  letter-spacing: 1px; 
 }
 
 .logo {
@@ -26,6 +28,7 @@ body {
 
 h1 {
   color: white;
+  letter-spacing: 1px;
 }
 
 input {
@@ -94,8 +97,9 @@ input:focus {
   margin-top: 20px;
   margin-right: 100px;
   margin-left: 100px;
+  margin-bottom: 160px;
   /* flex: 1; */
-  /* min-height: 60vh; */
+  min-height: 30vh;
 }
 
 .guesses-container .player-card {
@@ -104,6 +108,10 @@ input:focus {
   min-width: 350px;
   box-sizing: border-box;
   margin: 10px;
+}
+
+.settings-dialog{
+  width: 400px;
 }
 
 .legend {
@@ -151,6 +159,13 @@ input:focus {
   left: 0;
   width: 100%;
   height: 100px; /* Adjust the height as needed */
-  background: url('./footer.jpg') no-repeat center bottom;
+  background: url('./footer-ue.jpg') no-repeat center bottom;
   background-size: cover;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .logo{
+    margin-top: 35%;
+  }
 }

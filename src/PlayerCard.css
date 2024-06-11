@@ -10,6 +10,7 @@
     margin: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Added shadow */
     border-radius: 16px;
+    z-index: 999;
   }
   
   .player-info {
@@ -124,3 +125,27 @@
     background-color: white;
   }
 
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .player-card {
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .formation {
+    width: 150px;
+    height: 225px;
+  }
+
+  .position {
+    width: 15px;
+    height: 15px;
+  }
+
+  .center-circle {
+    width: 15%;
+    height: 10%;
+  }
+}

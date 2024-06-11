@@ -11,6 +11,7 @@ import { IconButton } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
 import logo from './euro2024.png'; // Adjust the path according to your project structure
 import bottomBorder from './footer.jpg'; // Adjust the path according to your project structure
+import { Helmet } from 'react-helmet';
 
 const MAX_GUESSES = 6;
 
@@ -168,7 +169,11 @@ const App = () => {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>EURO 2024 Guesser</title>
+      </Helmet>
       <img src={logo} alt="EURO 2024 Logo" className="logo" />
+      
       <h1>EURO 2024 PLAYER PURSUIT</h1>
       <div className="header-container">
         <div className="input-container">
@@ -190,6 +195,7 @@ const App = () => {
           onClose={handleSettingsClose}
           difficulty={difficulty}
           setDifficulty={setDifficulty}
+          className="settings-dialog"
         />
       </div>
       <p>Remaining Guesses: {MAX_GUESSES - guesses.length}</p>
@@ -199,9 +205,13 @@ const App = () => {
           <PlayerCard key={index} player={guess} targetPlayer={targetPlayer} />
         ))}
       </div>
+      <div>
+        <Legend />
       </div>
       
-      <Legend />
+      </div>
+      
+      {/* <Legend /> */}
       {targetPlayer && (
         <WinnerDialog
           open={winnerDialogOpen}

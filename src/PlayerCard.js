@@ -127,7 +127,7 @@ const PlayerCard = ({ player, targetPlayer }) => {
           <p><strong>Nation:</strong> {player.nation} {getNationCheckmark()}</p>
           <p><strong>Age:</strong> {player.age} {getAgeArrow()}</p>
           <p><strong>Position:</strong> {player.position}</p>
-          <p><strong>Euros Group:</strong> <strong >{playerGroup}</strong> {getGroupCheckamark()}</p>
+          <p><strong>Euros Group:</strong> {playerGroup}{getGroupCheckamark()}</p>
         </div>
       </div>
     </div>
