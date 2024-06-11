@@ -201,7 +201,7 @@ const App = () => {
       <p>Remaining Guesses: {MAX_GUESSES - guesses.length}</p>
       <div className="container">
         <div className="guesses-container">
-        {guesses.map((guess, index) => (
+        {guesses.slice().reverse().map((guess, index) => (
           <PlayerCard key={index} player={guess} targetPlayer={targetPlayer} />
         ))}
       </div>

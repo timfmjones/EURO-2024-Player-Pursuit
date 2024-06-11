@@ -64,7 +64,7 @@ const PlayerCard = ({ player, targetPlayer }) => {
     if (playerGroup === targetGroup) {
       return '✔';
     } else {
-      return '';
+      return '✘';
     }
   };
 
@@ -72,7 +72,17 @@ const PlayerCard = ({ player, targetPlayer }) => {
     if (player.nation === targetPlayer.nation) {
       return '✔';
     } else {
-      return '';
+      // return '✗';
+      return '✘';
+    }
+  };
+
+  const getPositionCheckmark = () => {
+    if (player.position === targetPlayer.position) {
+      return '✔';
+    } else {
+      // return '✗';
+      return '✘';
     }
   };
 
@@ -126,8 +136,8 @@ const PlayerCard = ({ player, targetPlayer }) => {
         <div className="details">
           <p><strong>Nation:</strong> {player.nation} {getNationCheckmark()}</p>
           <p><strong>Age:</strong> {player.age} {getAgeArrow()}</p>
-          <p><strong>Position:</strong> {player.position}</p>
-          <p><strong>Euros Group:</strong> {playerGroup}{getGroupCheckamark()}</p>
+          <p><strong>Position:</strong> {player.position} {getPositionCheckmark()}</p>
+          <p><strong>Euros Group:</strong> {playerGroup} {getGroupCheckamark()}</p>
         </div>
       </div>
     </div>
