@@ -2,7 +2,7 @@
   "name": "euros-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/timfmjones/EURO-2024-Player-Pursuit",
+  "homepage": "https://timfmjones.github.io/EURO-2024-Player-Pursuit",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
