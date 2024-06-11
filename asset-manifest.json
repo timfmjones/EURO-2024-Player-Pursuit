@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/timfmjones/EURO-2024-Player-Pursuit/static/css/main.f70cb285.css",
-    "main.js": "/timfmjones/EURO-2024-Player-Pursuit/static/js/main.11c7ff83.js",
-    "static/js/453.fa9af303.chunk.js": "/timfmjones/EURO-2024-Player-Pursuit/static/js/453.fa9af303.chunk.js",
-    "static/media/euro2024.png": "/timfmjones/EURO-2024-Player-Pursuit/static/media/euro2024.d688e3bda493dcedec41.png",
-    "static/media/footer-ue.jpg": "/timfmjones/EURO-2024-Player-Pursuit/static/media/footer-ue.c29cab6a7650eaa00cf8.jpg",
-    "static/media/footer.jpg": "/timfmjones/EURO-2024-Player-Pursuit/static/media/footer.4c67307957cff4982d6b.jpg",
-    "index.html": "/timfmjones/EURO-2024-Player-Pursuit/index.html",
-    "main.f70cb285.css.map": "/timfmjones/EURO-2024-Player-Pursuit/static/css/main.f70cb285.css.map",
-    "main.11c7ff83.js.map": "/timfmjones/EURO-2024-Player-Pursuit/static/js/main.11c7ff83.js.map",
-    "453.fa9af303.chunk.js.map": "/timfmjones/EURO-2024-Player-Pursuit/static/js/453.fa9af303.chunk.js.map"
+    "main.css": "/EURO-2024-Player-Pursuit/static/css/main.acc801b7.css",
+    "main.js": "/EURO-2024-Player-Pursuit/static/js/main.f6e18780.js",
+    "static/js/453.fa9af303.chunk.js": "/EURO-2024-Player-Pursuit/static/js/453.fa9af303.chunk.js",
+    "static/media/euro2024.png": "/EURO-2024-Player-Pursuit/static/media/euro2024.d688e3bda493dcedec41.png",
+    "static/media/footer-ue.jpg": "/EURO-2024-Player-Pursuit/static/media/footer-ue.c29cab6a7650eaa00cf8.jpg",
+    "static/media/footer.jpg": "/EURO-2024-Player-Pursuit/static/media/footer.4c67307957cff4982d6b.jpg",
+    "index.html": "/EURO-2024-Player-Pursuit/index.html",
+    "main.acc801b7.css.map": "/EURO-2024-Player-Pursuit/static/css/main.acc801b7.css.map",
+    "main.f6e18780.js.map": "/EURO-2024-Player-Pursuit/static/js/main.f6e18780.js.map",
+    "453.fa9af303.chunk.js.map": "/EURO-2024-Player-Pursuit/static/js/453.fa9af303.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f70cb285.css",
-    "static/js/main.11c7ff83.js"
+    "static/css/main.acc801b7.css",
+    "static/js/main.f6e18780.js"
   ]
 }
