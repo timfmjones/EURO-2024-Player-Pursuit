@@ -64,7 +64,7 @@ const PlayerCard = ({ player, targetPlayer }) => {
     if (playerGroup === targetGroup) {
       return '✔';
     } else {
-      return '✘';
+      return '✖';
     }
   };
 
@@ -73,7 +73,7 @@ const PlayerCard = ({ player, targetPlayer }) => {
       return '✔';
     } else {
       // return '✗';
-      return '✘';
+      return '✖';
     }
   };
 
@@ -82,14 +82,23 @@ const PlayerCard = ({ player, targetPlayer }) => {
       return '✔';
     } else {
       // return '✗';
-      return '✘';
+      return '✖';
+    }
+  };
+
+  const getNameCheckmark = () => {
+    if (player.name === targetPlayer.name) {
+      return '✔';
+    } else {
+      // return '✗';
+      return '✖';
     }
   };
 
 
   return (
     <div className="player-card">
-      <h2>{player.name}</h2>
+      <h2>{player.name} {getNameCheckmark()}</h2>
       <div className="player-info">
         <div className="formation">
         
@@ -134,10 +143,10 @@ const PlayerCard = ({ player, targetPlayer }) => {
           </div> */}
         </div>
         <div className="details">
-          <p><strong>Nation:</strong> {player.nation} {getNationCheckmark()}</p>
-          <p><strong>Age:</strong> {player.age} {getAgeArrow()}</p>
-          <p><strong>Position:</strong> {player.position} {getPositionCheckmark()}</p>
-          <p><strong>Euros Group:</strong> {playerGroup} {getGroupCheckamark()}</p>
+          <p style={{color: 'white'}}><strong>Nation:</strong> {player.nation} {getNationCheckmark()}</p>
+          <p style={{color: 'white'}}><strong>Age:</strong> {player.age} {getAgeArrow()}</p>
+          <p style={{color: 'white'}}><strong>Position:</strong> {player.position} {getPositionCheckmark()}</p>
+          <p style={{color: 'white'}}><strong>Euros Group:</strong> {playerGroup} {getGroupCheckamark()}</p>
         </div>
       </div>
     </div>
