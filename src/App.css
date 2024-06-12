@@ -180,7 +180,7 @@ input:focus {
 /* Media query for mobile devices */
 @media (max-width: 600px) {
   .logo{
-    margin-top: 40%;
+    margin-top: 45%;
   }
 
   .guess-counter{
