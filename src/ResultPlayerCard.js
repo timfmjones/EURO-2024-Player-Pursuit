@@ -3,7 +3,7 @@ import React from 'react';
 import { groups, positionGroups } from './players';
 import './PlayerCard.css';
 
-const PlayerCard = ({ player, targetPlayer }) => {
+const ResultPlayerCard = ({ player }) => {
   const getGroup = (nation) => {
     for (const group in groups) {
       if (groups[group].includes(nation)) {
@@ -23,21 +23,12 @@ const PlayerCard = ({ player, targetPlayer }) => {
   };
 
   const playerGroup = getGroup(player.nation);
-  const targetGroup = getGroup(targetPlayer.nation);
-  const targetPositionGroup = getPositionGroup(targetPlayer.position);
+
   const playerPositionGroup = getPositionGroup(player.position);
 
   const getPositionClass = (position) => {
-    if (position === player.position) {
-      if (position === targetPlayer.position) {
-        return 'green';
-      } else if (playerPositionGroup === targetPositionGroup) {
-        return 'yellow';
-      } else {
-        return 'red';
-      }
-    }
-    return '';
+
+    return 'green';
   };
 
   // const getNationClass = (nation) => {
@@ -51,39 +42,21 @@ const PlayerCard = ({ player, targetPlayer }) => {
   // }
 
   const getAgeArrow = () => {
-    if (player.age === targetPlayer.age) {
-      return '✔';
-    } else if (player.age < targetPlayer.age) {
-      return '↑';
-    } else {
-      return '↓';
-    }
+
+    return '✔';
   };
 
   const getGroupCheckamark = () => {
-    if (playerGroup === targetGroup) {
-      return '✔';
-    } else {
-      return '✘';
-    }
+
+    return '✔';
   };
 
   const getNationCheckmark = () => {
-    if (player.nation === targetPlayer.nation) {
-      return '✔';
-    } else {
-      // return '✗';
-      return '✘';
-    }
+    return '✔';
   };
 
   const getPositionCheckmark = () => {
-    if (player.position === targetPlayer.position) {
-      return '✔';
-    } else {
-      // return '✗';
-      return '✘';
-    }
+    return '✔';
   };
 
 
@@ -144,44 +117,5 @@ const PlayerCard = ({ player, targetPlayer }) => {
   );
 };
 
-export default PlayerCard;
+export default ResultPlayerCard;
 
-// // src/PlayerCard.js
-// import React from 'react';
-// import './PlayerCard.css';
-
-// const PlayerCard = ({ player, targetPlayer }) => {
-//   const getPositionColor = (position) => {
-//     if (position === targetPlayer.position) {
-//       return 'green';
-//     } else if (targetPlayer.positionGroups.includes(position)) {
-//       return 'yellow';
-//     } else {
-//       return 'red';
-//     }
-//   };
-
-//   return (
-//     <div className="player-card">
-//       <h2>{player.name}</h2>
-//       <div className="formation">
-//         <div className={`position position-1 ${getPositionColor('Goalkeeper')}`}></div>
-//         <div className={`position position-2 ${getPositionColor('Left Back')}`}></div>
-//         <div className={`position position-3 ${getPositionColor('Center Back')}`}></div>
-//         <div className={`position position-4 ${getPositionColor('Right Back')}`}></div>
-//         <div className={`position position-5 ${getPositionColor('Defensive Midfield')}`}></div>
-//         <div className={`position position-6 ${getPositionColor('Midfielder')}`}></div>
-//         <div className={`position position-7 ${getPositionColor('Attacking Midfield')}`}></div>
-//         <div className={`position position-8 ${getPositionColor('Left Wing')}`}></div>
-//         <div className={`position position-9 ${getPositionColor('Striker')}`}></div>
-//         <div className={`position position-10 ${getPositionColor('Right Wing')}`}></div>
-//       </div>
-//       <p>Nation: {player.nation}</p>
-//       <p>Age: {player.age} {targetPlayer && (player.age < targetPlayer.age ? '↑' : player.age > targetPlayer.age ? '↓' : '')}</p>
-//       <p>Position: {player.position}</p>
-//       <p>Euros Group: {player.group}</p>
-//     </div>
-//   );
-// };
-
-// export default PlayerCard;

@@ -13,7 +13,7 @@ import logo from './euro2024.png'; // Adjust the path according to your project 
 import bottomBorder from './footer.jpg'; // Adjust the path according to your project structure
 import { Helmet } from 'react-helmet';
 
-const MAX_GUESSES = 6;
+const MAX_GUESSES = 3;
 
 const App = () => {
   const [targetPlayer, setTargetPlayer] = useState(null);
@@ -182,12 +182,12 @@ const App = () => {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyPress={handleKeyPress}
-          placeholder="Guess the player"
+          placeholder="Guess the player..."
           className="input-player"
           />
           <button className='guess-button' onClick={handleGuess}>GUESS</button>
         </div>
-        <IconButton onClick={handleSettingsOpen} aria-label="settings">
+        <IconButton onClick={handleSettingsOpen} aria-label="settings" className="settings-button">
           <SettingsIcon />
         </IconButton>
         <Settings
@@ -227,6 +227,7 @@ const App = () => {
           open={loserDialogOpen}
           onClose={handleKeepPlaying}
           onKeepPlaying={handleKeepPlaying}
+          onPlayAgain={handlePlayAgain}
           player={targetPlayer}
         />
       )}

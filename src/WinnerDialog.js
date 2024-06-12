@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/material';
+import PlayerCard from './PlayerCard';
 
 const WinnerDialog = ({ open, onClose, onPlayAgain, onShare, player, guesses }) => {
   if (!player) {
@@ -36,12 +37,20 @@ const WinnerDialog = ({ open, onClose, onPlayAgain, onShare, player, guesses }) 
     color: '#6d6d6d', // text secondary color
   };
 
+  const playerCardStyle = {
+    color: 'white',
+  };
+
   return (
     <Dialog open={open} onClose={onClose}>
       <DialogTitle style={dialogTitleStyle}>Congratulations!</DialogTitle>
       <DialogContent style={dialogContentStyle}>
         <p>You guessed the correct player: <span style={playerNameStyle}>{player.name}</span>!</p>
         <p style={guessTextStyle}>It took you {guesses} {guesses === 1 ? 'guess' : 'guesses'}.</p>
+        <div style={{color: 'white', display: 'table-cell'}}>
+          <PlayerCard player={player} targetPlayer={player} style={playerCardStyle}/>
+        </div>
+        
       </DialogContent>
       <DialogActions style={dialogActionsStyle}>
         <Button onClick={onPlayAgain} color="primary" style={buttonStyle}>
