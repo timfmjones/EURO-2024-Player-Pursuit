@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/EURO-2024-Player-Pursuit/static/css/main.2534351d.css",
-    "main.js": "/EURO-2024-Player-Pursuit/static/js/main.8fb3f0b5.js",
+    "main.css": "/EURO-2024-Player-Pursuit/static/css/main.e5d42194.css",
+    "main.js": "/EURO-2024-Player-Pursuit/static/js/main.110413d8.js",
     "static/js/453.fa9af303.chunk.js": "/EURO-2024-Player-Pursuit/static/js/453.fa9af303.chunk.js",
     "static/media/euro2024.png": "/EURO-2024-Player-Pursuit/static/media/euro2024.d688e3bda493dcedec41.png",
     "static/media/footer-ue.jpg": "/EURO-2024-Player-Pursuit/static/media/footer-ue.c29cab6a7650eaa00cf8.jpg",
+    "static/media/header-ue.jpg": "/EURO-2024-Player-Pursuit/static/media/header-ue.ec3d6f3b6e50b376f5c3.jpg",
     "static/media/footer.jpg": "/EURO-2024-Player-Pursuit/static/media/footer.4c67307957cff4982d6b.jpg",
     "index.html": "/EURO-2024-Player-Pursuit/index.html",
-    "main.2534351d.css.map": "/EURO-2024-Player-Pursuit/static/css/main.2534351d.css.map",
-    "main.8fb3f0b5.js.map": "/EURO-2024-Player-Pursuit/static/js/main.8fb3f0b5.js.map",
+    "main.e5d42194.css.map": "/EURO-2024-Player-Pursuit/static/css/main.e5d42194.css.map",
+    "main.110413d8.js.map": "/EURO-2024-Player-Pursuit/static/js/main.110413d8.js.map",
     "453.fa9af303.chunk.js.map": "/EURO-2024-Player-Pursuit/static/js/453.fa9af303.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2534351d.css",
-    "static/js/main.8fb3f0b5.js"
+    "static/css/main.e5d42194.css",
+    "static/js/main.110413d8.js"
   ]
 }
