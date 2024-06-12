@@ -13,7 +13,7 @@ import logo from './euro2024.png'; // Adjust the path according to your project 
 import bottomBorder from './footer.jpg'; // Adjust the path according to your project structure
 import { Helmet } from 'react-helmet';
 
-const MAX_GUESSES = 3;
+const MAX_GUESSES = 5;
 
 const App = () => {
   const [targetPlayer, setTargetPlayer] = useState(null);
@@ -66,6 +66,8 @@ const App = () => {
       if (guessedPlayer.name === targetPlayer.name) {
         setWinnerDialogOpen(true);
       }
+    } else if(inputValue.toLowerCase() === 'messi'){
+      alert('Did you really just guess Messi for a EUROs game')
     } else {
       alert('Player not found!');
     }
@@ -170,6 +172,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className="top-border"></div>
       <Helmet>
         <title>EURO 2024 Guesser</title>
       </Helmet>

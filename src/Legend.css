@@ -31,11 +31,11 @@
   }
   
   .group-A h3 { background-color: #00b050; }
-  .group-B h3 { background-color: #04278f; color: 'white';}
-  .group-C h3 { background-color: #ff0000; }
+  .group-B h3 { background-color: #04278f; color: white;}
+  .group-C h3 { background-color: #ff0000;  color: white;}
   .group-D h3 { background-color: #ffcc00; }
   .group-E h3 { background-color: #bfbfbf; }
-  .group-F h3 { background-color: #1f1f1f; }
+  .group-F h3 { background-color: #1f1f1f;  color: white;}
   
   .group ul {
     list-style: none;
