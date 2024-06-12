@@ -187,7 +187,7 @@ const App = () => {
           />
           <button className='guess-button' onClick={handleGuess}>GUESS</button>
         </div>
-        <IconButton onClick={handleSettingsOpen} aria-label="settings" className="settings-button">
+        <IconButton onClick={handleSettingsOpen} aria-label="settings" className="settings-button" style={{color: 'white'}}>
           <SettingsIcon />
         </IconButton>
         <Settings
