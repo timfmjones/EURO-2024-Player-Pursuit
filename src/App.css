@@ -170,6 +170,14 @@ input:focus {
 /* Media query for mobile devices */
 @media (max-width: 600px) {
   .logo{
-    margin-top: 43%;
+    margin-top: 33%;
+  }
+
+  .guess-counter{
+    margin-top: 0;
+  }
+
+  .header-container{
+    padding-top: 0;
   }
 }

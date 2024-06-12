@@ -31,7 +31,7 @@
   }
   
   .group-A h3 { background-color: #00b050; }
-  .group-B h3 { background-color: #0033cc; }
+  .group-B h3 { background-color: #04278f; color: 'white';}
   .group-C h3 { background-color: #ff0000; }
   .group-D h3 { background-color: #ffcc00; }
   .group-E h3 { background-color: #bfbfbf; }
@@ -70,3 +70,13 @@
     z-index: -1;
 }
   
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .group{
+    width: 150px;
+  }
+  h3{
+    font-size: smaller;
+  }
+}

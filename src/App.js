@@ -146,7 +146,8 @@ const App = () => {
     setWinnerDialogOpen(false);
     setLoserDialogOpen(false);
     setNewTargetPlayer();
-    setIsFirstGame(true); // Reset the first game flag
+    setInputValue('');
+    // setIsFirstGame(true); // Reset the first game flag
   };
 
   const handleShare = () => {
@@ -198,7 +199,7 @@ const App = () => {
           className="settings-dialog"
         />
       </div>
-      <p>Remaining Guesses: {MAX_GUESSES - guesses.length}</p>
+      <p className="guess-counter">Remaining Guesses: {MAX_GUESSES - guesses.length}</p>
       <div className="container">
         <div className="guesses-container">
         {guesses.slice().reverse().map((guess, index) => (

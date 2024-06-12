@@ -13,18 +13,19 @@ const LoserDialog = ({ open, onClose, onKeepPlaying, onPlayAgain, player }) => {
     <Dialog open={open} onClose={onClose}>
       <DialogTitle>{reveal ? "The Player Was:" : "Out of Guesses!"}</DialogTitle>
       <DialogContent>
-        {reveal ? <PlayerCard player={player} /> : <p>You've run out of guesses.</p>}
-        {reveal ? <p>It was {player.name}</p> : <p>You've run out of guesses.</p>}
+        {/* {reveal ? <PlayerCard player={player} /> : <p>You've run out of guesses.</p>} */}
+        {/* {reveal ? <p>It was {player.name}</p> : <p>You've run out of guesses.</p>} */}
+        <p>It was {player.name}</p> : <p>You've run out of guesses.</p>
       </DialogContent>
       <DialogActions>
-        {!reveal && (
+        {/* {!reveal && (
           <Button onClick={handleReveal} color="primary">
             Reveal Player
           </Button>
-        )}
-        <Button onClick={onKeepPlaying} color="primary">
+        )} */}
+        {/* <Button onClick={onKeepPlaying} color="primary">
           Keep Playing
-        </Button>
+        </Button> */}
         <Button onClick={onPlayAgain} color="primary" >
           Play Again
         </Button>
