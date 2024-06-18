@@ -143,10 +143,10 @@ const PlayerCard = ({ player, targetPlayer }) => {
           </div> */}
         </div>
         <div className="details">
-          <p style={{color: 'white'}}><strong>Nation:</strong> {player.nation} {getNationCheckmark()}</p>
-          <p style={{color: 'white'}}><strong>Age:</strong> {player.age} {getAgeArrow()}</p>
-          <p style={{color: 'white'}}><strong>Position:</strong> {player.position} {getPositionCheckmark()}</p>
-          <p style={{color: 'white'}}><strong>Euros Group:</strong> {playerGroup} {getGroupCheckamark()}</p>
+          <p className="info-text" style={{color: 'white'}}><strong>Nation:</strong> {player.nation} {getNationCheckmark()}</p>
+          <p className="info-text" style={{color: 'white'}}><strong>Age:</strong> {player.age} {getAgeArrow()}</p>
+          <p className="info-text" style={{color: 'white'}}><strong>Position:</strong> {player.position} {getPositionCheckmark()}</p>
+          <p className="info-text" style={{color: 'white'}}><strong>Euros Group:</strong> {playerGroup} {getGroupCheckamark()}</p>
         </div>
       </div>
     </div>

@@ -86,6 +86,10 @@
   .info.red {
     color: red;
   }
+
+  .info-text{
+    color: white;
+  }
   
   .forward, .defense, .goalie {
     display: flex;
