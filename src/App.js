@@ -21,6 +21,7 @@ const App = () => {
   const [inputValue, setInputValue] = useState('');
   const [feedback, setFeedback] = useState([]);
   const [difficulty, setDifficulty] = useState(1);
+  const [maxGuesses, setMaxGuesses] = useState(5)
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [winnerDialogOpen, setWinnerDialogOpen] = useState(false);
   const [loserDialogOpen, setLoserDialogOpen] = useState(false);
@@ -48,7 +49,7 @@ const App = () => {
   };
 
   const handleGuess = () => {
-    if (guesses.length >= MAX_GUESSES) {
+    if (guesses.length >= maxGuesses) {
       setLoserDialogOpen(true);
       return;
     }
@@ -199,10 +200,12 @@ const App = () => {
           onClose={handleSettingsClose}
           difficulty={difficulty}
           setDifficulty={setDifficulty}
+          maxGuesses={maxGuesses}
+          setMaxGuesses={setMaxGuesses}
           className="settings-dialog"
         />
       </div>
-      <p className="guess-counter">Remaining Guesses: {MAX_GUESSES - guesses.length}</p>
+      <p className="guess-counter">Remaining Guesses: {maxGuesses - guesses.length}</p>
       <div className="container">
         <div className="guesses-container">
         {guesses.slice().reverse().map((guess, index) => (

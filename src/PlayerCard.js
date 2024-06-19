@@ -52,7 +52,7 @@ const PlayerCard = ({ player, targetPlayer }) => {
 
   const getAgeArrow = () => {
     if (player.age === targetPlayer.age) {
-      return '✔';
+      return '✔️';
     } else if (player.age < targetPlayer.age) {
       return '↑';
     } else {
@@ -62,36 +62,36 @@ const PlayerCard = ({ player, targetPlayer }) => {
 
   const getGroupCheckamark = () => {
     if (playerGroup === targetGroup) {
-      return '✔';
+      return '✔️';
     } else {
-      return '✖';
+      return 'X';
     }
   };
 
   const getNationCheckmark = () => {
     if (player.nation === targetPlayer.nation) {
-      return '✔';
+      return '✔️';
     } else {
       // return '✗';
-      return '✖';
+      return 'X';
     }
   };
 
   const getPositionCheckmark = () => {
     if (player.position === targetPlayer.position) {
-      return '✔';
+      return '✔️';
     } else {
       // return '✗';
-      return '✖';
+      return 'X';
     }
   };
 
   const getNameCheckmark = () => {
     if (player.name === targetPlayer.name) {
-      return '✔';
+      return '✔️';
     } else {
       // return '✗';
-      return '✖';
+      return 'X';
     }
   };
 
@@ -143,10 +143,10 @@ const PlayerCard = ({ player, targetPlayer }) => {
           </div> */}
         </div>
         <div className="details">
-          <p className="info-text" style={{color: 'white'}}><strong>Nation:</strong> {player.nation} {getNationCheckmark()}</p>
-          <p className="info-text" style={{color: 'white'}}><strong>Age:</strong> {player.age} {getAgeArrow()}</p>
-          <p className="info-text" style={{color: 'white'}}><strong>Position:</strong> {player.position} {getPositionCheckmark()}</p>
-          <p className="info-text" style={{color: 'white'}}><strong>Euros Group:</strong> {playerGroup} {getGroupCheckamark()}</p>
+          <p className="info-text" style={{color: 'white'}}><strong>Nation:</strong> {player.nation} <b>{getNationCheckmark()}</b></p>
+          <p className="info-text" style={{color: 'white'}}><strong>Age:</strong> {player.age} <b>{getAgeArrow()}</b></p>
+          <p className="info-text" style={{color: 'white'}}><strong>Position:</strong> {player.position} <b>{getPositionCheckmark()}</b></p>
+          <p className="info-text" style={{color: 'white'}}><strong>Euros Group:</strong> {playerGroup} <b>{getGroupCheckamark()}</b></p>
         </div>
       </div>
     </div>
