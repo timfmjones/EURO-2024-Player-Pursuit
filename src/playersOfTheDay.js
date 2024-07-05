@@ -35,6 +35,7 @@ const playersOfTheDay = {
     '2024-07-03': 'Jorginho',
     '2024-07-04': 'Pedri',
     '2024-07-05': 'Jude Bellingham',
+    '2024-07-06': 'Toni Kroos',
     // Add more players for the rest of July
   };
   
