@@ -334,7 +334,7 @@ const players = [
 { name: 'Jeremie Frimpong', nation: 'Netherlands', age: 22, position: 'Right Wing', difficulty: 2 },
 { name: 'Cody Gakpo', nation: 'Netherlands', age: 24, position: 'Striker', difficulty: 1 },
 { name: 'Donyell Malen', nation: 'Netherlands', age: 24, position: 'Right Wing', difficulty: 2 },
-{ name: 'Xavi Simons', nation: 'Netherlands', age: 20, position: 'Attacking Midfield', difficulty: 3 },
+{ name: 'Xavi Simons', nation: 'Netherlands', age: 20, position: 'Attacking Midfield', difficulty: 1 },
 { name: 'Wout Weghorst', nation: 'Netherlands', age: 31, position: 'Striker', difficulty: 2 },
 
 // Adding Polish players
