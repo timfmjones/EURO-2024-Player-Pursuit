@@ -39,6 +39,8 @@ const playersOfTheDay = {
     '2024-07-07': 'Rodri',
     '2024-07-08': 'Xavi Simons',
     '2024-07-09': 'Mike Maignan',
+    '2024-07-10': 'Jordan Pickford',
+    '2024-07-11': 'Luka Modric',
 
     // Add more players for the rest of July
   };
