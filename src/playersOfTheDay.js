@@ -44,6 +44,9 @@ const playersOfTheDay = {
     '2024-07-12': 'Declan Rice',
     '2024-07-13': 'Pedri',
     '2024-07-14': 'Manuel Neuer',
+    '2024-07-15': 'Phil Foden',
+    '2024-07-16': 'Cristiano Ronaldo',
+    '2024-06-17': 'Romelu Lukaku',
 
     // Add more players for the rest of July
   };
