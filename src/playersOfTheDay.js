@@ -48,6 +48,19 @@ const playersOfTheDay = {
     '2024-07-16': 'Cristiano Ronaldo',
     '2024-06-17': 'Romelu Lukaku',
     '2024-07-18': 'Toni Kroos',
+    '2024-07-19': 'Jordan Pickford',
+    '2024-07-20': 'Jordan Pickford',
+    '2024-07-21': 'Luka Modric',
+    '2024-07-22': 'Declan Rice',
+    '2024-07-23': 'Pedri',
+    '2024-07-24': 'Manuel Neuer',
+    '2024-07-25': 'Phil Foden',
+    '2024-07-26': 'Cristiano Ronaldo',
+    '2024-06-27': 'Romelu Lukaku',
+    '2024-07-28': 'Toni Kroos',
+    '2024-07-29': 'Rodri',
+    '2024-07-30': 'Declan Rice',
+    '2024-07-31': 'Cristiano Ronaldo',
 
     // Add more players for the rest of July
   };
