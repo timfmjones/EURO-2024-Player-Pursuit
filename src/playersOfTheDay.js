@@ -73,6 +73,7 @@ const playersOfTheDay = {
     '2024-08-10': 'Jordan Pickford',
     '2024-08-11': 'Luka Modric',
     '2024-08-12': 'Declan Rice',
+    '2024-08-13': 'Harry Kane',
 
     // Add more players for the rest of July
   };
